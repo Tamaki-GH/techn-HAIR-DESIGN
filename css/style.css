@@ -269,7 +269,7 @@ ul { list-style: none; }
   z-index: 0;
   background-image: url("../images/hero.png");
   background-size: cover;
-  background-position: 72% 22%;
+  background-position: 72% 8%;
   background-repeat: no-repeat;
   filter: saturate(0.82) contrast(1.03) brightness(0.95) sepia(0.12);
 }
@@ -438,6 +438,8 @@ ul { list-style: none; }
 
 /* a slot holding a real photo — hide the empty-slot guides */
 .ph--photo::before, .ph--photo::after { display: none; }
+/* keep the top of the head in frame (crop from the bottom, not the top) */
+.ph--photo { background-position: center top; }
 
 /* ---------- strengths / pillars ---------- */
 .pillars {
