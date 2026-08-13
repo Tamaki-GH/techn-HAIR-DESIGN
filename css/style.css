@@ -832,6 +832,8 @@ ul { list-style: none; }
   .menu-row { grid-template-columns: 1fr; }
   .menu-row__price { justify-self: start; }
   .hero__cta .btn { width: 100%; justify-content: center; }
+  /* stacked CTAs leave no room for the scroll cue — it would sit on the buttons */
+  .hero__scroll { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
